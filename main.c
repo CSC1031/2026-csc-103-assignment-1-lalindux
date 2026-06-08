@@ -2,7 +2,7 @@
 
 int main() {
 
-    // My Index Number 20250398
+    // My Index Number AS20250398
     float math, science, english;
     float total, average;
     char grade;
