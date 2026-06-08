@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main() {
+
+    // My Index Number 20250398
     float math, science, english;
     float total, average;
     char grade;
