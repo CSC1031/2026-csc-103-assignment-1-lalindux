@@ -4,6 +4,7 @@ int main() {
     float math, science, english;
     float total, average;
     char grade;
+    float highest_mark;
 
     // Taking input for the 3 subjects
     printf("Enter marks for Mathematics: ");
@@ -31,11 +32,22 @@ int main() {
     } else {
         grade = 'F';
     }
+    highest_mark = math;
+    if (science > highest_mark) {
+        highest_mark = science;
+    }
+    if (english > highest_mark) {
+        highest_mark = english;
+    }
 
     // Printing the processed results
+    printf("\n===================================\n");
+    printf("         ACADEMIC REPORT           \n");
+    printf("===================================\n");
     printf("\nTotal: %.0f\n", total);
     printf("Average: %.2f\n", average);
     printf("Grade: %c\n", grade);
+    printf(" Highest Subject  : %.1f\n", highest_mark);
 
     // 3. Checking Pass / Fail Rule (IMPORTANT)
     // PASS if ALL subjects are >= 40. If ANY subject is < 40, it's a FAIL.
@@ -44,6 +56,6 @@ int main() {
     } else {
         printf("Result: FAIL\n");
     }
-
+    printf("\n===================================\n");
     return 0;
 }
